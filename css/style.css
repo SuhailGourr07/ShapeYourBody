@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* reset section */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secodary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.main-container {
+    padding: 0 6%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8rem;
+}
+
+h2 {
+    color: white;
+}
+
+/* navbar-section */
+.navbar {
+    height: 10vh;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+span {
+    color: rgb(238, 80, 22);
+}
+
+.primary-button {
+    padding: 12px 20px;
+    background-color: rgb(238, 80, 22);
+    color: white;
+    border-radius: 6px;
+    transition: 0.2s ease-in;
+}
+
+.primary-button:hover {
+    background-color: rgb(163, 48, 6);
+}
+
+/* first-section */
+
+.first-section-area {
+    background-color: black;
+    padding: 160px;
+    position: relative;
+}
+
+.first-section-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("/images/photo1.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.2;
+}
+
+.first-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-section h4 {
+    color: white;
+}
+
+.first-section h1 {
+    color: white;
+    font-size: 4em;
+}
+
+/* second-section */
+.second-section-area {
+    padding: 90px 6%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(221, 211, 191);
+}
+
+.second-section-header {
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.second-section-header p {
+    padding-top: 20px;
+}
+
+.dumbbell-box {
+    height: 120px;
+    width: 120px;
+    background-color: rgb(238, 80, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+#dumbbell {
+    color: white;
+    font-size: 3em;
+}
+
+.program-choose-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.dumbbell-box-desc {
+    width: 32vw;
+}
+
+.discover-more-btn:hover {
+    color: rgb(197, 62, 13);
+}
+
+/* third-section */
+.third-section-area {
+    background-color: black;
+    padding: 70px;
+    position: relative;
+}
+
+.third-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.third-section-area::before {
+    content: '';
+    position: absolute;
+    /* background-repeat: no-repeat; */
+    background-image: url("/images/photo2.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+
+.third-section-area p {
+    text-align: center;
+    color: white;
+    width: 70vw;
+    position: relative;
+}
+
+/* fourth-section */
+
+.fourth-section-area {
+    padding: 90px 6%;
+    background-color: rgb(221, 211, 191);
+}
+
+.fourth-section-header {
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.fourth-section-header p {
+    padding-top: 20px;
+}
+
+.fourth-section-left-right-area {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-area-box {
+    height: 70px;
+    width: 300px;
+    background-color: rgb(221, 211, 191);
+    color: rgb(238, 80, 22);
+    box-shadow: 0 0px 10px rgb(238, 80, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 6px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.left-area-box:hover {
+    background-color: rgb(200, 194, 184);
+}
+
+.left-area-box i {
+    font-size: 1.5em;
+}
+
+.left-box-button {
+    background-color: crimson;
+    box-shadow: none;
+    transition: 0.2s ease-in;
+}
+
+.left-box-button:hover {
+    background-color: rgb(159, 23, 50);
+}
+
+.fourth-section-right {
+    height: 55vh;
+    width: 55vw;
+}
+
+.fourth-section-right img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+.fourth-section-right-descp {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fourth-section-right-descp-button {
+    text-align: center;
+    display: inline-block;
+    background-color: crimson;
+    color: white;
+    padding: 10px 25px;
+    width: 28%;
+    border-radius: 6px;
+    transition: 0.2s ease-in;
+}
+
+.fourth-section-right-descp-button:hover {
+    background-color: rgb(159, 23, 50);
+}
+
+/* fith-section-area */
+
+.fifth-section-area {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: relative;
+
+}
+
+.fifth-section-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("/images/photo4.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.1;
+}
+
+.fifth-section-header {
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
+
+.fifth-section-header p {
+    padding-top: 20px;
+}
+
+.day-schedule {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.day-schedule a {
+    font-size: 1.3em;
+}
+
+.class-table table {
+    margin: 30px auto;
+    height: 70vh;
+    width: 80%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+.class-table table th,
+td {
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+}
+
+/* sixth-section */
+
+.sixth-section-area {
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+.sixth-section-header {
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sixth-section-header p {
+    padding-top: 20px;
+}
+
+.sixth-section-cart-area {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+    width: 380px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0px 10px rgb(238, 80, 22);
+}
+
+.cart img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3em;
+}
+
+#fb {
+    color: #003366;
+    transition: 0.2s ease-in;
+}
+#fb:hover{
+    color: #1760ad;
+}
+
+#twitter {
+    color: #1DA1F2;
+    transition: 0.2s ease-in;
+}
+
+#twitter:hover {
+    color: #37a8ee;
+}
+#in {
+    color: #0A66C2;
+    transition: 0.2s ease-in;
+}
+#in:hover {
+    color: #187ee5;
+}
+
+#insta {
+    color: #E1306C;
+    transition: 0.2s ease-in;
+}
+#insta:hover{
+    color: #f6548a;
+}
+
+/* footer */
+
+footer {
+    padding: 50px 6%;
+    background-color: rgb(42, 41, 41);
+}
+
+.links-area ul {
+    list-style: none;
+
+}
+
+.links-area ul a {
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+.links-area ul a:hover {
+    color: rgb(135, 123, 123);
+}
+
+.links-area ul h3 {
+    color: rgb(238, 80, 22);
+}
+
+.links-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
