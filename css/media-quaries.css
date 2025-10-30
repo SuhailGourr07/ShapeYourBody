@@ -183,5 +183,6 @@ footer {
 @media only screen and (max-width: 479px){
     .day-schedule a {
     font-size: 1.1em;
+        flex-wrap: wrap;
 }
 }
